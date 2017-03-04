@@ -1,0 +1,193 @@
+/*css & media queries*/
+body{
+    font-family:"Roboto","Arial","sans serif";
+    color:#777;
+}
+div#top {
+    position:absolute;
+    top:5px;
+    right:25px;
+}
+    div#top a {
+        color:#444;
+        text-decoration:none;
+    }
+    div#top a:hover {
+        text-decoration:underline;
+    }
+    div#top a:active {
+        font-weight:700;
+    }
+header {
+    height:220px;
+    margin:30px 0;
+    display:flex;
+    justify-content:center;
+    flex-direction:row;
+}
+    header > div#kappaImage {
+        width:150px;
+        margin:0 25px;
+        background:url('../img/medium/kappa.png');
+        opacity:0;
+        -webkit-animation: fadeIn 1s linear forwards;
+        -o-animation: fadeIn 1s linear forwards;
+        -moz-animation: fadeIn 1s linear fowards;
+        animation: fadeIn 1s linear forwards;
+    }
+    @-webkit-keyframes fadeIn {
+        from {
+            opacity:0;
+        }
+        to {
+            opacity:1;
+        }
+    }
+@media screen and (max-width:780px) {
+    header > div#kappaImage {
+        display:none;
+    }
+}
+    header > div#headerDivision {
+        margin:0 25px;
+        width:500px;
+        border:10px;
+        flex-direction:column;
+    }
+        header > div#headerDivision > div#blogImage {
+            width:500px;
+            height:120px;
+            background:url('../img/medium/blog.png');
+            opacity:0;
+            -webkit-animation: fadeIn 1s linear forwards;
+            -o-animation: fadeIn 1s linear forwards;
+            -moz-animation: fadeIn 1s linear fowards;
+            animation: fadeIn 1s linear forwards;
+            animation-delay:0.5s;
+        }
+        header > div#headerDivision > h1 {
+            font-family:"Wire One","Arial","sans serif";
+            color:#999;
+            font-size: 46pt;
+            font-weight: 300;
+            margin:0;
+            text-align:center;
+            opacity:0;
+            -webkit-animation: fadeIn 1s linear forwards;
+            -o-animation: fadeIn 1s linear forwards;
+            -moz-animation: fadeIn 1s linear fowards;
+            animation: fadeIn 1s linear forwards;
+            animation-delay:0.5s;
+
+        }
+nav {
+    height:50px;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+}
+    nav > li {
+        width:150px;
+        margin:0 35px;
+        background:url('../img/button.svg');
+        background-size:contain;
+        background-repeat:no-repeat;
+        list-style-type:none;
+        text-align:center;
+        line-height:45px;
+    }
+/* scale navigation*/
+@media screen and (max-width:920px) {
+    nav > li {
+        width:140px;
+        margin:0 15px;
+        line-height:44px;
+
+    }
+}
+@media screen and (max-width:680px) {
+    nav > li {
+        width:100px;
+        margin:0 10px;
+        line-height:32px;
+
+    }
+}
+        nav > li > a {
+            font-family:"Lora";
+            text-decoration:none;
+            display:block;
+            color:#444;
+        }
+        nav > li > a:active {
+            font-weight:700;
+        }
+main {
+    margin:80px auto;
+    width:600px;
+}
+@media screen and (max-width:780px) {
+    main {
+        width:500px;
+    }
+}
+    main > article {
+        margin:0 0 0 100px;
+        width:500px;
+    }
+@media screen and (max-width:780px) {
+    main > article {
+        margin:0 0 0 20px;
+        width:440px;
+    }
+}
+
+        main > article > div.articleHeader {
+            display:flex;
+            position:relative;
+        }
+            main > article > div.articleHeader > h2,h3 {
+                font-weight:100;
+                margin:0px;
+                font-family:"Wire One","Arial","sans serif";
+            }
+
+            main > article > div.articleHeader > h3 {
+                font-size:22pt;
+                position:absolute;
+                left:0;
+                bottom:0;
+            }
+            main > article > div.articleHeader > h2 {
+                font-size:42pt;
+                text-align:right;
+                color:#963838;
+                position:absolute;
+                right:30px;
+                bottom:0;
+            }
+        main > article > div.articleContent {
+            margin:10px;
+        }
+        main > article > div.articleTags {
+            font-size:20pt;
+            color:#963838;
+            font-family:"Wire One","Arial","sans serif";
+        }
+/*keyframes*/
+@-webkit-keyframes fadeIn {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}

@@ -1,0 +1,27 @@
+header
+--------
+Total width 920
+Line 1 85px marg + 150px kappa.png + 50px marg + 500px blog.svg + 50px marg + 85px marg
+Line 2 285px marg + 500px line.svg + 135px marg
+Line 3 285px marg + 500px "Sander De Bleecker" + 135px marg
+Line 4 285px marg + 500px line.svg + 135px marg
+
+navigation
+-----------
+Total width 920
+
+
+
+kappa.png
+-----------
+Small width 600
+ TBD
+
+Normal width 920
+ width image 150
+ width ratio = 1/8 (150/920)
+
+Broad width 2800
+ width image 350 (design width)
+  
+ 
